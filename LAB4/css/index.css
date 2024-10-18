@@ -1,10 +1,10 @@
 .italics
 {
-    font-style: italic;
+    font-style: italics;
 }
 .bold-text
 {
-    font-weight: 600;
+    font-weight:600;
 }
 .red-text
 {
@@ -20,7 +20,7 @@ td
 {
     border: solid black 1px;
 }
-/* Add padding and width to all child td tags */
+/* Add padding and width to all the child td tags */
 #table-with-padding td
 {
     padding: 10px;
