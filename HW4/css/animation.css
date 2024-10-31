@@ -4,7 +4,7 @@
     background: red;
     position: relative;
     -webkit-animation: box3 5s; /* chrome, Safari, Opera */
-    animation: box 5s;
+    animation: box3 5s;
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes box3 {
