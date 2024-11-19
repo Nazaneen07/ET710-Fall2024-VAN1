@@ -9,34 +9,24 @@ form.addEventListener("submit", function(event) {
     event.preventDefault(); 
 
     // Check if form is valid
-    // This is a conditional statement. We will cover this later in the semester.
     if (!form.checkValidity()) {
-        event.stopPropagation();  // Fixed the typo here
+        event.stopPropagation();  
         form.classList.add('was-validated');
         return;
     }
 
     // Retrieve values from form inputs
+    document.getElementById("name").textContent = form['name'].value;
+    document.getElementById("email").textContent = form['email'].value;
+    document.getElementById("age").textContent = form['age'].value;
+    document.getElementById("Satisfaction").textContent = form['Satisfaction'].value;  
+    document.getElementById("contactMethod").textContent = form['contactMethod'].value;
+    document.getElementById("Comments").textContent = form['comments'].value;
 
-document.getElementById("name").textContent = form['name'].value;
+    // Show modal with results
+    new bootstrap.Modal(modal).show();
 
-document.getElementById("email").textContent = form['email'].value;
-
-document.getElementById("age").textContent = form['age'].value;
-
-document.getElementById("satisfaction").textContent = form['Satisfaction'].value;  
-
-document.getElementById("contactMethod").textContent = form['contactMethod'].value;
-
-document.getElementById("comments").textContent = form['comments'].value;
-
-// show modal with results
-new bootstrap.Model(model).show();
-
-// Reset the form and validation state
-form.reset();
-form.classList.remove('was-validated');
-
-
-
+    // Reset the form and validation state after modal is shown
+    form.reset();
+    form.classList.remove('was-validated');
 }); 
