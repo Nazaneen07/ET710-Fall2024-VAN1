@@ -9,7 +9,7 @@ function showTodo(day) {
         displaySunday();
     } else {
         clear();
-        window.alert("Sorry, but that day is unvailable");
+        window.alert("Sorry, but that day is unvailable.");
     }
 }
 
